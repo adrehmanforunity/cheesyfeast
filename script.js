@@ -123,3 +123,60 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2000);
     }
 });
+
+
+// Lazy Loading Implementation
+class LazyLoader {
+    constructor() {
+        this.imageObserver = null;
+        this.init();
+    }
+
+    init() {
+        if ('IntersectionObserver' in window) {
+            this.imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        this.loadImage(img);
+                        observer.unobserve(img);
+                    }
+                });
+            }, {
+                rootMargin: '50px 0px',
+                threshold: 0.01
+            });
+
+            this.observeImages();
+        } else {
+            // Fallback for older browsers
+            this.loadAllImages();
+        }
+    }
+
+    observeImages() {
+        const lazyImages = document.querySelectorAll('.lazy-load');
+        lazyImages.forEach(img => {
+            this.imageObserver.observe(img);
+        });
+    }
+
+    loadImage(img) {
+        const src = img.getAttribute('data-src');
+        if (src) {
+            img.src = src;
+            img.classList.add('loaded');
+            img.removeAttribute('data-src');
+        }
+    }
+
+    loadAllImages() {
+        const lazyImages = document.querySelectorAll('.lazy-load');
+        lazyImages.forEach(img => this.loadImage(img));
+    }
+}
+
+// Initialize lazy loading when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    new LazyLoader();
+});

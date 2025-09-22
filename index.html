@@ -63,15 +63,25 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Stylesheets -->
+    <!-- Performance Optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
+    
+    <!-- Resource Hints -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Structured Data for Local Business -->
+    <!-- Enhanced Restaurant Schema with @id -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Restaurant",
+        "@id": "https://cheesyfeast.com/#restaurant",
         "name": "Cheesy Feast",
         "image": "https://cheesyfeast.com/images/logo.png",
         "description": "Karachi's ultimate spot for cheesy pizzas & delicious fast food",
@@ -89,6 +99,11 @@
         "sameAs": [
             "https://www.facebook.com/cheesyfeast",
             "https://www.instagram.com/cheesy_feast/"
+        ],
+        "hasMenu": "https://cheesyfeast.com/#menu",
+        "makesOffer": [
+            "https://cheesyfeast.com/#promotion-2in1",
+            "https://cheesyfeast.com/#promotion-large-pizza"
         ]
     }
     </script>
@@ -141,7 +156,11 @@
         <div class="container">
             <h2 class="section-title">Our <span class="highlight">Menu</span></h2>
             <div class="menu-image-container">
-                <img src="images/Menus.jpeg" alt="Cheesy Feast Menu" class="menu-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                     data-src="images/Menus.jpeg" 
+                     alt="Cheesy Feast Menu" 
+                     class="menu-image lazy-load"
+                     loading="lazy">
             </div>
             <div class="menu-grid">
                 <div class="menu-item">
@@ -168,12 +187,243 @@
         </div>
     </section>
 
+    <!-- Enhanced Menu Structured Data with @id and Restaurant Link -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "@id": "https://cheesyfeast.com/#menu",
+        "name": "Cheesy Feast Menu",
+        "description": "Delicious pizzas, burgers, and fast food menu",
+        "provider": {
+            "@id": "https://cheesyfeast.com/#restaurant"
+        },
+        "hasMenuSection": [
+            {
+                "@type": "MenuSection",
+                "@id": "https://cheesyfeast.com/#menu-pizzas",
+                "name": "Specialty Pizzas",
+                "description": "Afghani, Malai, and more delicious varieties",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-afghani",
+                        "name": "Afghani Pizza Large",
+                        "description": "Traditional Afghani style pizza with special spices and authentic flavors",
+                        "image": "https://cheesyfeast.com/images/afghani-pizza.jpg",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-afghani",
+                            "price": "500",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2024-12-31",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-malai",
+                        "name": "Malai Pizza Large",
+                        "description": "Creamy malai pizza with rich flavors and premium ingredients",
+                        "image": "https://cheesyfeast.com/images/malai-pizza.jpg",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-malai",
+                            "price": "500",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2024-12-31",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-2in1",
+                        "name": "2-in-1 Large Pizza",
+                        "description": "Half Afghani, Half Malai - Best of both worlds in one pizza",
+                        "image": "https://cheesyfeast.com/images/2in1-pizza.jpg",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-2in1",
+                            "price": "750",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2024-12-31",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            },
+                            "category": "Special Deal"
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "@id": "https://cheesyfeast.com/#menu-fastfood",
+                "name": "Fast Food",
+                "description": "Burgers, sandwiches, and quick bites",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-chicken-burger",
+                        "name": "Chicken Burger",
+                        "description": "Juicy grilled chicken burger with fresh vegetables and special sauce",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-chicken-burger",
+                            "price": "350",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- Enhanced Promotion Schema with @id and Links -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Promotion",
+        "@id": "https://cheesyfeast.com/#promotions",
+        "name": "Cheesy Feast Special Pizza Deals",
+        "description": "Amazing deals on specialty pizzas and family packages",
+        "validFrom": "2024-01-01",
+        "validThrough": "2024-12-31",
+        "eligibleRegion": {
+            "@type": "Place",
+            "name": "Karachi, Pakistan"
+        },
+        "promotionOf": {
+            "@id": "https://cheesyfeast.com/#restaurant"
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-2in1",
+                "name": "2-in-1 Large Pizza Deal",
+                "description": "Half Afghani, Half Malai Pizza",
+                "price": "750",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2024-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "itemOffered": {
+                    "@id": "https://cheesyfeast.com/#menu-item-2in1"
+                },
+                "category": "Pizza Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-large-pizza",
+                "name": "Large Pizza Any Flavor",
+                "description": "Any flavor of your choice - Large size",
+                "price": "500",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2024-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Pizza Deal"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Enhanced Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "@id": "https://cheesyfeast.com/#restaurant",
+        "name": "Cheesy Feast",
+        "alternateName": "Cheesy Feast Karachi",
+        "description": "Karachi's ultimate spot for cheesy pizzas & delicious fast food",
+        "url": "https://cheesyfeast.com",
+        "logo": "https://cheesyfeast.com/images/logo.png",
+        "image": [
+            "https://cheesyfeast.com/images/og-1200x630.jpg",
+            "https://cheesyfeast.com/images/logo.png"
+        ],
+        "telephone": "+92-335-7314408",
+        "email": "info@cheesyfeast.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "iShop # B-4, Bumbiya Arcade, Block 12 Gulistan-e-johar",
+            "addressLocality": "Karachi",
+            "addressRegion": "Sindh",
+            "postalCode": "75290",
+            "addressCountry": "PK"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "24.8607",
+            "longitude": "67.0011"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "11:00",
+                "closes": "23:00"
+            }
+        ],
+        "servesCuisine": ["Pizza", "Fast Food", "Pakistani", "Italian"],
+        "priceRange": "$$",
+        "currenciesAccepted": "PKR",
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
+        "hasMenu": "https://cheesyfeast.com/#menu",
+        "acceptsReservations": "False",
+        "sameAs": [
+            "https://www.facebook.com/cheesyfeast",
+            "https://www.instagram.com/cheesy_feast/"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "150",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
     <!-- Deals Section -->
     <section id="deals" class="deals-section">
         <div class="container">
             <h2 class="section-title">Special <span class="highlight">Deals</span></h2>
             <div class="deals-image-container">
-                <img src="images/Deals.jpeg" alt="Cheesy Feast Deals" class="deals-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                     data-src="images/Deals.jpeg" 
+                     alt="Cheesy Feast Deals" 
+                     class="deals-image lazy-load"
+                     loading="lazy">
             </div>
             <div class="deals-grid">
                 <div class="deal-card">
