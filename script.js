@@ -37,9 +37,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // WhatsApp Order Function
 function orderWhatsApp() {
-    const phoneNumber = '923357314408'; // Pakistan format
-    const message = encodeURIComponent('Hi! I would like to place an order from Cheesy Feast. Please share your menu and current deals.');
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    const phoneNumber = '923357314408'; // Your WhatsApp number
+    const message = 'Hi! I want to place an order from Cheesy Feast. Please share your menu and deals.';
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
 
