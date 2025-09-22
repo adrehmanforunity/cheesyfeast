@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesy Feast - Karachi's Ultimate Pizza Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🍕 Cheesy Feast</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#deals" class="nav-link">Deals</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="nav-link order-btn" onclick="orderNow()">Order Now</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span class="highlight">Cheesy Feast</span></h1>
+            <p>Karachi's ultimate spot for cheesy pizzas & delicious fast food!</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="orderNow()">Order Now</button>
+                <button class="btn-secondary" onclick="scrollToSection('menu')">View Menu</button>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>iShop # B-4, Bumbiya Arcade, Block 12 Gulistan-e-johar, Karachi</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="pizza-animation">
+                <div class="pizza">🍕</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Menu</span></h2>
+            <div class="menu-image-container">
+                <img src="images/Menus.jpeg" alt="Cheesy Feast Menu" class="menu-image">
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-icon">🍕</div>
+                    <h3>Specialty Pizzas</h3>
+                    <p>Afghani, Malai, and more delicious varieties</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">🍔</div>
+                    <h3>Fast Food</h3>
+                    <p>Burgers, sandwiches, and quick bites</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">🥤</div>
+                    <h3>Beverages</h3>
+                    <p>Fresh drinks and refreshing beverages</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>Sweet treats to complete your meal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals-section">
+        <div class="container">
+            <h2 class="section-title">Special <span class="highlight">Deals</span></h2>
+            <div class="deals-image-container">
+                <img src="images/Deals.jpeg" alt="Cheesy Feast Deals" class="deals-image">
+            </div>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge">Hot Deal!</div>
+                    <h3>2-in-1 Large Pizza</h3>
+                    <p>Half Afghani, Half Malai</p>
+                    <div class="price">Rs. 750</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Special!</div>
+                    <h3>Large Pizza</h3>
+                    <p>Any flavor of your choice</p>
+                    <div class="price">Rs. 500</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Family Deal!</div>
+                    <h3>Family Package</h3>
+                    <p>Perfect for family gatherings</p>
+                    <div class="price">Special Price</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>0335-7314408</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>iShop # B-4, Bumbiya Arcade<br>Block 12 Gulistan-e-johar, Karachi</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Daily: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-actions">
+                    <button class="whatsapp-btn" onclick="orderWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        Order via WhatsApp
+                    </button>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/cheesyfeast" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cheesy_feast/" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>🍕 Cheesy Feast</h3>
+                    <p>Karachi's ultimate pizza destination</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#deals">Deals</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheesy Feast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
