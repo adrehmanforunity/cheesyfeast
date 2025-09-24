@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cheesyfeast.com/sitemap.xml

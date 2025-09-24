@@ -9,7 +9,7 @@
 
     <meta name="title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination | Order Online">
     <meta name="description" content="Order delicious pizzas, burgers & fast food from Cheesy Feast in Karachi. Specialty Afghani & Malai pizzas, family deals, and quick delivery. Located in Gulistan-e-Johar.">
-    <!-- <meta name="keywords" content="pizza karachi, cheesy feast, afghani pizza, malai pizza, fast food karachi, pizza delivery, gulistan e johar, karachi restaurant, online food order"> -->
+    <meta name="keywords" content="pizza karachi, cheesy feast, afghani pizza, malai pizza, fast food karachi, pizza delivery, gulistan e johar, karachi restaurant, online food order">
     <meta name="author" content="Cheesy Feast">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -53,7 +53,7 @@
     <!-- Theme Color -->
     <meta name="theme-color" content="#FFD700">
     <meta name="msapplication-navbutton-color" content="#FFD700">
-    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="#FFD700"> -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFD700">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://cheesyfeast.com/">
@@ -67,10 +67,9 @@
     <!-- Performance Optimizations -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrFJDUc1NECPY.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="style.css" as="style">
-    <!--  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style"> -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
+    
     <!-- Resource Hints -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="stylesheet" href="style.css">
@@ -87,10 +86,6 @@
         "name": "Cheesy Feast",
         "image": "https://cheesyfeast.com/images/logo.png",
         "description": "Karachi's ultimate spot for cheesy pizzas & delicious fast food",
-        "makesOffer": [
-            "https://cheesyfeast.com/#promotion-2in1",
-            "https://cheesyfeast.com/#promotion-large-pizza"
-        ],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "iShop # B-4, Bumbiya Arcade, Block 12 Gulistan-e-johar",
@@ -99,7 +94,7 @@
         },
         "telephone": "+92-335-7314408",
         "url": "https://cheesyfeast.com",
-        "openingHours": "Mo-Su 04:00 PM - 04:00 AM",
+        "openingHours": "Mo-Su 04:00-16:00",
         "servesCuisine": ["Pizza", "Fast Food", "Pakistani"],
         "priceRange": "$$",
         "sameAs": [
@@ -107,6 +102,10 @@
             "https://www.instagram.com/cheesy_feast/"
         ],
         "hasMenu": "https://cheesyfeast.com/#menu",
+        "makesOffer": [
+            "https://cheesyfeast.com/#promotion-2in1",
+            "https://cheesyfeast.com/#promotion-large-pizza"
+        ]
     }
     </script>
 </head>
@@ -115,7 +114,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2><span aria-hidden="true">🍕</span> Cheesy Feast</h2>
+                <h2>🍕 Cheesy Feast</h2>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
@@ -164,7 +163,6 @@
        alt="Cheesy Feast Menu"
        class="menu-image"
        loading="lazy"
-       decoding="async"
        width="800" height="600">
 </picture>
             </div>
@@ -303,7 +301,7 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Offer",
+        "@type": "Promotion",
         "@id": "https://cheesyfeast.com/#promotions",
         "name": "Cheesy Feast Special Pizza Deals",
         "description": "Amazing deals on specialty pizzas and family packages",
@@ -396,8 +394,8 @@
                     "Saturday",
                     "Sunday"
                 ],
-                "opens": "16:00",
-                "closes": "04:00"
+                "opens": "04:00",
+                "closes": "16:00"
             }
         ],
         "servesCuisine": ["Pizza", "Fast Food", "Pakistani", "Italian"],
@@ -431,7 +429,6 @@
        alt="Cheesy Feast Deals"
        class="deals-image"
        loading="lazy"
-       decoding="async"
        width="800" height="600">
 </picture>
             </div>
@@ -485,7 +482,7 @@
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>Opening Hours</h4>
-                            <p>Daily: 04:00 PM - 04:00 AM</p>
+                            <p>Daily: 04:00 AM - 04:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -529,10 +526,10 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <div class="whatsapp-float" onclick="orderWhatsApp()" aria-label="Order on WhatsApp">
+    <div class="whatsapp-float" onclick="orderWhatsApp()">
         <i class="fab fa-whatsapp"></i>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
