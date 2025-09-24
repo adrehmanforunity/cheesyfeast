@@ -1,6 +1,3 @@
-/* your existing CSS — unchanged except for .nav-logo .logo-text added to keep the logo visuals when we changed the h2 to a span */
-
-/* Global reset */
 * {
     margin: 0;
     padding: 0;
@@ -40,15 +37,6 @@ body {
     align-items: center;
 }
 
-/* ADDED: preserve original logo styles after changing H2 -> span.logo-text */
-.nav-logo .logo-text {
-    color: #FFD700;
-    font-weight: 700;
-    font-size: 1.5rem;
-    display: inline-block;
-}
-
-/* (kept your original .nav-logo h2 rule as reference; no need to remove it if present, but .logo-text is authoritative) */
 .nav-logo h2 {
     color: #FFD700;
     font-weight: 700;
