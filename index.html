@@ -66,12 +66,16 @@
     <!-- Performance Optimizations -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    
+    <style>
+      /* Critical layout to prevent CLS before external CSS loads */
+      .navbar { position: fixed; top: 0; width: 100%; z-index: 1000; }
+      .hero { min-height: 100vh; padding: 100px 20px 50px; }
+    </style>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Resource Hints -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -111,23 +115,23 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Primary">
         <div class="nav-container">
             <div class="nav-logo">
                 <h2>🍕 Cheesy Feast</h2>
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#menu" class="nav-link">Menu</a>
-                <a href="#deals" class="nav-link">Deals</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#" class="nav-link order-btn" onclick="orderNow()">Order Now</a>
-            </div>
-            <div class="hamburger" id="hamburger">
+            <ul id="primary-menu" class="nav-menu" role="menubar" aria-label="Main menu">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem" aria-label="Go to Home section">Home</a></li>
+                <li role="none"><a href="#menu" class="nav-link" role="menuitem" aria-label="Go to Menu section">Menu</a></li>
+                <li role="none"><a href="#deals" class="nav-link" role="menuitem" aria-label="Go to Deals section">Deals</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem" aria-label="Go to Contact section">Contact</a></li>
+                <li role="none"><a href="https://wa.me/923357314408" class="order-btn" role="menuitem" aria-label="Order Now on WhatsApp">Order Now</a></li>
+            </ul>
+            <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
