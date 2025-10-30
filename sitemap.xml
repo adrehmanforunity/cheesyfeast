@@ -9,7 +9,7 @@
     <image:image>
       <image:loc>https://cheesyfeast.com/images/og-1200x630.jpg</image:loc>
       <image:title>Cheesy Feast - Karachi's Ultimate Pizza Destination</image:title>
-      <image:caption>Delicious pizzas & fast food in Karachi</image:caption>
+      <image:caption>Delicious pizzas &amp; fast food in Karachi</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cheesyfeast.com/images/Menus.webp</image:loc>
@@ -19,7 +19,7 @@
     <image:image>
       <image:loc>https://cheesyfeast.com/images/Deals.webp</image:loc>
       <image:title>Cheesy Feast Special Deals</image:title>
-      <image:caption>Deals on Afghani, Malai & 2-in-1 pizzas</image:caption>
+      <image:caption>Deals on Afghani, Malai &amp; 2-in-1 pizzas</image:caption>
     </image:image>
   </url>
 
