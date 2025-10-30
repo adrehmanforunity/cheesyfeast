@@ -33,18 +33,6 @@
       <image:loc>https://cheesyfeast.com/images/Menus.webp</image:loc>
       <image:title>Cheesy Feast Menu</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://cheesyfeast.com/images/afghani-pizza.jpg</image:loc>
-      <image:title>Afghani Pizza</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://cheesyfeast.com/images/malai-pizza.jpg</image:loc>
-      <image:title>Malai Pizza</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://cheesyfeast.com/images/2in1-pizza.jpg</image:loc>
-      <image:title>2-in-1 Pizza</image:title>
-    </image:image>
   </url>
 
   <!-- Deals Section -->
