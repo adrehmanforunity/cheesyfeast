@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://cheesyfeast.com/sitemap.xml
+
+# Performance optimization - allow crawling of key assets
+User-agent: *
+Allow: /images/*.webp$
+Allow: /images/*.jpg$
+Allow: /images/*.jpeg$
+Allow: /images/*.png$
+Allow: /style.css$
+Allow: /script.js$

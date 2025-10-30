@@ -1,36 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Homepage -->
   <url>
     <loc>https://cheesyfeast.com/</loc>
-    <lastmod>2025-09-24</lastmod>
+    <lastmod>2025-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/og-1200x630.jpg</image:loc>
+      <image:title>Cheesy Feast - Karachi's Ultimate Pizza Destination</image:title>
+      <image:caption>Delicious pizzas & fast food in Karachi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/Menus.webp</image:loc>
+      <image:title>Cheesy Feast Menu</image:title>
+      <image:caption>Our pizza menu and fast food</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/Deals.webp</image:loc>
+      <image:title>Cheesy Feast Special Deals</image:title>
+      <image:caption>Deals on Afghani, Malai & 2-in-1 pizzas</image:caption>
+    </image:image>
   </url>
 
   <!-- Menu Section -->
   <url>
     <loc>https://cheesyfeast.com/#menu</loc>
-    <lastmod>2025-09-24</lastmod>
+    <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/Menus.webp</image:loc>
+      <image:title>Cheesy Feast Menu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/afghani-pizza.jpg</image:loc>
+      <image:title>Afghani Pizza</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/malai-pizza.jpg</image:loc>
+      <image:title>Malai Pizza</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/2in1-pizza.jpg</image:loc>
+      <image:title>2-in-1 Pizza</image:title>
+    </image:image>
   </url>
 
   <!-- Deals Section -->
   <url>
     <loc>https://cheesyfeast.com/#deals</loc>
-    <lastmod>2025-09-24</lastmod>
+    <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/Deals.webp</image:loc>
+      <image:title>Cheesy Feast Special Deals</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/2in1-pizza.jpg</image:loc>
+      <image:title>2-in-1 Pizza Deal</image:title>
+    </image:image>
   </url>
 
   <!-- Contact Section -->
   <url>
     <loc>https://cheesyfeast.com/#contact</loc>
-    <lastmod>2025-09-24</lastmod>
+    <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://cheesyfeast.com/images/logo.png</image:loc>
+      <image:title>Cheesy Feast Logo</image:title>
+    </image:image>
   </url>
-
 </urlset>

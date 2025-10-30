@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title>Cheesy Feast - Karachi's Ultimate Pizza Destination | Order Online</title>
-    <meta name="title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination | Order Online">
-    <meta name="description" content="Order delicious pizzas, burgers & fast food from Cheesy Feast in Karachi. Specialty Afghani & Malai pizzas, family deals, and quick delivery. Located in Gulistan-e-Johar.">
-    <meta name="keywords" content="pizza karachi, cheesy feast, afghani pizza, malai pizza, fast food karachi, pizza delivery, gulistan e johar, karachi restaurant, online food order">
+    <title>Cheesy Feast - Karachi's Ultimate Pizza Destination | Afghani Pizza, Malai Pizza Deals</title>
+    <meta name="title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination | Afghani Pizza, Malai Pizza Deals">
+    <meta name="description" content="Order delicious Afghani Pizza, Malai Pizza & fast food from Cheesy Feast in Karachi. Special 2-in-1 Pizza Deals, Family Deals. Located in Gulistan-e-Johar.">
+    <meta name="keywords" content="pizza karachi, cheesy feast, afghani pizza, malai pizza, fast food karachi, pizza delivery, gulistan e johar, karachi restaurant, online food order, 2in1 pizza, family pizza deals, specialty pizza karachi, halal pizza, chicken burger, soft drinks, family feast, pizza deals karachi, best pizza karachi, gulistan johar food delivery, chicken tikka pizza, fajita pizza, behari boti pizza, veggie lover pizza, zinger burger, beef burger, broast chicken, club sandwich, shawarma, pasta, fries, cold drinks, family feast 19, family feast 18, family feast 17, deal 01, deal 02, deal 03, deal 04, deal 05, deal 06, deal 07, deal 08, deal 09, deal 10, deal 11, deal 12, deal 13, deal 14, deal 15, deal 16">
     <meta name="author" content="Cheesy Feast">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -22,8 +22,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cheesyfeast.com/">
-    <meta property="og:title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination">
-    <meta property="og:description" content="Order delicious pizzas, burgers & fast food from Cheesy Feast in Karachi. Specialty Afghani & Malai pizzas, family deals, and quick delivery.">
+    <meta property="og:title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination | Order Afghani & Malai Pizza">
+    <meta property="og:description" content="Order delicious Afghani Pizza, Malai Pizza & fast food from Cheesy Feast in Karachi. Special 2-in-1 Pizza Deals, Family Deals. Located in Gulistan-e-Johar.">
     <meta property="og:image" content="https://cheesyfeast.com/images/og-1200x630.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -33,8 +33,8 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://cheesyfeast.com/">
-    <meta property="twitter:title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination">
-    <meta property="twitter:description" content="Order delicious pizzas, burgers & fast food from Cheesy Feast in Karachi. Specialty Afghani & Malai pizzas, family deals, and quick delivery.">
+    <meta property="twitter:title" content="Cheesy Feast - Karachi's Ultimate Pizza Destination | Order Afghani & Malai Pizza">
+    <meta property="twitter:description" content="Order delicious Afghani Pizza, Malai Pizza & fast food from Cheesy Feast in Karachi. Special 2-in-1 Pizza Deals, Family Deals. Located in Gulistan-e-Johar.">
     <meta property="twitter:image" content="https://cheesyfeast.com/images/og-1200x630.jpg">
     
     <!-- Business/Local SEO -->
@@ -94,7 +94,7 @@
         },
         "telephone": "+92-335-7314408",
         "url": "https://cheesyfeast.com",
-        "openingHours": "Mo-Su 16:00-04:00",
+        "openingHours": "Mo-Su 17:00-04:00",
         "servesCuisine": ["Pizza", "Fast Food", "Pakistani"],
         "priceRange": "$$",
         "sameAs": [
@@ -157,11 +157,18 @@
         <div class="container">
             <h2 class="section-title">Our <span class="highlight">Menu</span></h2>
             <div class="menu-image-container">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E" 
-                     data-src="images/Menus.jpeg" 
-                     alt="Cheesy Feast Menu" 
-                     class="menu-image lazy-load"
-                     loading="lazy">
+                <picture>
+                    <source data-srcset="images/Menus.webp" type="image/webp">
+                    <source data-srcset="images/Menus.jpeg" type="image/jpeg">
+                    <img data-src="images/Menus.webp" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                         alt="Cheesy Feast Menu - Afghani Pizza, Malai Pizza, Burgers, Fast Food" 
+                         class="menu-image lazy-load"
+                         loading="lazy"
+                         width="800"
+                         height="600"
+                         onerror="this.src='images/Menus.jpeg';">
+                </picture>
             </div>
             <div class="menu-grid">
                 <div class="menu-item">
@@ -195,7 +202,7 @@
         "@type": "Menu",
         "@id": "https://cheesyfeast.com/#menu",
         "name": "Cheesy Feast Menu",
-        "description": "Delicious pizzas, burgers, and fast food menu",
+        "description": "Delicious pizzas, burgers, and fast food menu from Karachi's favorite pizza destination",
         "provider": {
             "@id": "https://cheesyfeast.com/#restaurant"
         },
@@ -204,65 +211,69 @@
                 "@type": "MenuSection",
                 "@id": "https://cheesyfeast.com/#menu-pizzas",
                 "name": "Specialty Pizzas",
-                "description": "Afghani, Malai, and more delicious varieties",
+                "description": "Afghani, Malai, and more delicious varieties of our signature pizzas",
                 "hasMenuItem": [
                     {
                         "@type": "MenuItem",
                         "@id": "https://cheesyfeast.com/#menu-item-afghani",
                         "name": "Afghani Pizza Large",
-                        "description": "Traditional Afghani style pizza with special spices and authentic flavors",
+                        "description": "Traditional Afghani style pizza with special spices and authentic flavors, topped with tender chicken, green chilies, and our secret sauce blend",
                         "image": "https://cheesyfeast.com/images/afghani-pizza.jpg",
                         "offers": {
                             "@type": "Offer",
                             "@id": "https://cheesyfeast.com/#offer-afghani",
-                            "price": "500",
+                            "price": "800",
                             "priceCurrency": "PKR",
                             "availability": "https://schema.org/InStock",
                             "validFrom": "2024-01-01",
-                            "validThrough": "2024-12-31",
+                            "validThrough": "2025-12-31",
                             "offeredBy": {
                                 "@id": "https://cheesyfeast.com/#restaurant"
                             }
-                        }
+                        },
+                        "suitableForDiet": "https://schema.org/HalalDiet"
                     },
                     {
                         "@type": "MenuItem",
                         "@id": "https://cheesyfeast.com/#menu-item-malai",
                         "name": "Malai Pizza Large",
-                        "description": "Creamy malai pizza with rich flavors and premium ingredients",
+                        "description": "Creamy malai pizza with rich flavors and premium ingredients, featuring our signature creamy sauce, tender chicken, and exotic spices",
                         "image": "https://cheesyfeast.com/images/malai-pizza.jpg",
                         "offers": {
                             "@type": "Offer",
                             "@id": "https://cheesyfeast.com/#offer-malai",
-                            "price": "500",
+                            "price": "800",
                             "priceCurrency": "PKR",
                             "availability": "https://schema.org/InStock",
                             "validFrom": "2024-01-01",
-                            "validThrough": "2024-12-31",
+                            "validThrough": "2025-12-31",
                             "offeredBy": {
                                 "@id": "https://cheesyfeast.com/#restaurant"
-                            }
-                        }
+                            },
+                            "category": "Signature Pizza"
+                        },
+                        "suitableForDiet": "https://schema.org/HalalDiet"
                     },
                     {
                         "@type": "MenuItem",
                         "@id": "https://cheesyfeast.com/#menu-item-2in1",
                         "name": "2-in-1 Large Pizza",
-                        "description": "Half Afghani, Half Malai - Best of both worlds in one pizza",
+                        "description": "Half Afghani, Half Malai - Best of both worlds in one pizza, perfect for sharing and tasting both our signature flavors",
                         "image": "https://cheesyfeast.com/images/2in1-pizza.jpg",
                         "offers": {
                             "@type": "Offer",
                             "@id": "https://cheesyfeast.com/#offer-2in1",
-                            "price": "750",
+                            "price": "800",
                             "priceCurrency": "PKR",
                             "availability": "https://schema.org/InStock",
                             "validFrom": "2024-01-01",
-                            "validThrough": "2024-12-31",
+                            "validThrough": "2025-12-31",
                             "offeredBy": {
                                 "@id": "https://cheesyfeast.com/#restaurant"
                             },
                             "category": "Special Deal"
-                        }
+                        },
+                        "suitableForDiet": "https://schema.org/HalalDiet"
                     }
                 ]
             },
@@ -270,19 +281,92 @@
                 "@type": "MenuSection",
                 "@id": "https://cheesyfeast.com/#menu-fastfood",
                 "name": "Fast Food",
-                "description": "Burgers, sandwiches, and quick bites",
+                "description": "Burgers, sandwiches, and quick bites for a satisfying meal",
                 "hasMenuItem": [
                     {
                         "@type": "MenuItem",
                         "@id": "https://cheesyfeast.com/#menu-item-chicken-burger",
                         "name": "Chicken Burger",
-                        "description": "Juicy grilled chicken burger with fresh vegetables and special sauce",
+                        "description": "Juicy grilled chicken burger with fresh vegetables and special sauce, served with fries",
                         "offers": {
                             "@type": "Offer",
                             "@id": "https://cheesyfeast.com/#offer-chicken-burger",
                             "price": "350",
                             "priceCurrency": "PKR",
                             "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2025-12-31",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            }
+                        },
+                        "suitableForDiet": "https://schema.org/HalalDiet"
+                    }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "@id": "https://cheesyfeast.com/#menu-beverages",
+                "name": "Beverages",
+                "description": "Refreshing drinks to complement your meal",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-soft-drinks",
+                        "name": "Soft Drinks",
+                        "description": "Coca-Cola, Pepsi, Sprite, Fanta and other carbonated beverages",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-soft-drinks",
+                            "price": "150",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2025-12-31",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-mineral-water",
+                        "name": "Mineral Water",
+                        "description": "Fresh and purified mineral water",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-mineral-water",
+                            "price": "100",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2025-12-31",
+                            "offeredBy": {
+                                "@id": "https://cheesyfeast.com/#restaurant"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "@id": "https://cheesyfeast.com/#menu-desserts",
+                "name": "Desserts",
+                "description": "Sweet treats to complete your meal",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "@id": "https://cheesyfeast.com/#menu-item-ice-cream",
+                        "name": "Ice Cream",
+                        "description": "Vanilla, Chocolate, and Strawberry ice cream flavors",
+                        "offers": {
+                            "@type": "Offer",
+                            "@id": "https://cheesyfeast.com/#offer-ice-cream",
+                            "price": "250",
+                            "priceCurrency": "PKR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2024-01-01",
+                            "validThrough": "2025-12-31",
                             "offeredBy": {
                                 "@id": "https://cheesyfeast.com/#restaurant"
                             }
@@ -301,9 +385,9 @@
         "@type": "Promotion",
         "@id": "https://cheesyfeast.com/#promotions",
         "name": "Cheesy Feast Special Pizza Deals",
-        "description": "Amazing deals on specialty pizzas and family packages",
+        "description": "Amazing deals on specialty pizzas and family packages from Karachi's ultimate pizza destination",
         "validFrom": "2024-01-01",
-        "validThrough": "2024-12-31",
+        "validThrough": "2025-12-31",
         "eligibleRegion": {
             "@type": "Place",
             "name": "Karachi, Pakistan"
@@ -316,12 +400,12 @@
                 "@type": "Offer",
                 "@id": "https://cheesyfeast.com/#promotion-2in1",
                 "name": "2-in-1 Large Pizza Deal",
-                "description": "Half Afghani, Half Malai Pizza",
-                "price": "750",
+                "description": "Half Afghani, Half Malai Pizza - Our most popular deal for sharing",
+                "price": "800",
                 "priceCurrency": "PKR",
                 "availability": "https://schema.org/InStock",
                 "validFrom": "2024-01-01",
-                "validThrough": "2024-12-31",
+                "validThrough": "2025-12-31",
                 "seller": {
                     "@id": "https://cheesyfeast.com/#restaurant"
                 },
@@ -334,16 +418,301 @@
                 "@type": "Offer",
                 "@id": "https://cheesyfeast.com/#promotion-large-pizza",
                 "name": "Large Pizza Any Flavor",
-                "description": "Any flavor of your choice - Large size",
-                "price": "500",
+                "description": "Any flavor of your choice - Large size, perfect for 2-3 people",
+                "price": "800",
                 "priceCurrency": "PKR",
                 "availability": "https://schema.org/InStock",
                 "validFrom": "2024-01-01",
-                "validThrough": "2024-12-31",
+                "validThrough": "2025-12-31",
                 "seller": {
                     "@id": "https://cheesyfeast.com/#restaurant"
                 },
                 "category": "Pizza Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-family-feast-19",
+                "name": "Family Feast 19",
+                "description": "2 Leg Broast, 2 Zinger, 1 BBQ Sandwich, 1 Arabian Shawarma, 1.5 Litre Drink",
+                "price": "2400",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Family Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-01",
+                "name": "Deal 01",
+                "description": "1 Zinger with Fries & Coleslaw, 1 Cold Drink 345ml",
+                "price": "450",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Value Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-02",
+                "name": "Deal 02",
+                "description": "1 Pan Pizza, 1 Cold Drink 345ml",
+                "price": "420",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Value Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-03",
+                "name": "Deal 03",
+                "description": "1 Chicken Burger, 1 Beef Burger with Fries & Coleslaw",
+                "price": "600",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Combo Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-04",
+                "name": "Deal 04",
+                "description": "1 Pan Pizza, 1 Zinger with Fries & Coleslaw",
+                "price": "650",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Feast Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-05",
+                "name": "Deal 05",
+                "description": "1 Zinger with Fries & Coleslaw, 1 Regular Pasta",
+                "price": "720",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Popular Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-06",
+                "name": "Deal 06",
+                "description": "3 Zinger with Fries & Coleslaw",
+                "price": "1050",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Sharing Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-07",
+                "name": "Deal 07",
+                "description": "1 Pan Pizza, 1 Regular Pasta",
+                "price": "680",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Combo Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-08",
+                "name": "Deal 08",
+                "description": "1 Zinger, 1 Qtr. Leg Broast with Fries & Coleslaw",
+                "price": "750",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Feast Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-09",
+                "name": "Deal 09",
+                "description": "2 Zinger, 1 Qtr. Leg Broast with Fries & Coleslaw",
+                "price": "1150",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Popular Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-10",
+                "name": "Deal 10",
+                "description": "3 Zinger Rolls",
+                "price": "750",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Value Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-11",
+                "name": "Deal 11",
+                "description": "1 Chicken Burger, 1 Beef Burger, 1 Zinger with Fries & Coleslaw, 1 Litre Drink",
+                "price": "1100",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Feast Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-12",
+                "name": "Deal 12",
+                "description": "3 Small Pizza with 1 Free Dip Sauce",
+                "price": "950",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Sharing Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-13",
+                "name": "Deal 13",
+                "description": "2 Large Pizza with 1 Free Dip Sauce",
+                "price": "1500",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Popular Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-14",
+                "name": "Deal 14",
+                "description": "2 Regular Pizza with 1 Free Dip Sauce, 1 Litre Drink",
+                "price": "1100",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Feast Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-15",
+                "name": "Deal 15",
+                "description": "3 Large Pizza with 1 Free Dip Sauce, 1 Litre Drink",
+                "price": "2200",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Sharing Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-deal-16",
+                "name": "Deal 16",
+                "description": "1 Large Pizza, 1 Regular Pizza with 1 Free Dip Sauce",
+                "price": "1100",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Combo Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-family-feast-17",
+                "name": "Family Feast 17",
+                "description": "1 Zinger, 1 Beef Burger, 1 Chicken Sandwich, 1 Zinger Roll, 1 Qtr. Leg Broast, 1.5 Litre Drink",
+                "price": "1700",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Family Deal"
+            },
+            {
+                "@type": "Offer",
+                "@id": "https://cheesyfeast.com/#promotion-family-feast-18",
+                "name": "Family Feast 18",
+                "description": "3 Zinger, 1 Regular Pizza, 1 Regular Pasta, 1 Litre Drink",
+                "price": "2050",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-01-01",
+                "validThrough": "2025-12-31",
+                "seller": {
+                    "@id": "https://cheesyfeast.com/#restaurant"
+                },
+                "category": "Family Deal"
             }
         ]
     }
@@ -391,8 +760,8 @@
                     "Saturday",
                     "Sunday"
                 ],
-                "opens": "16:00",
-                "closes": "04:00"
+                "opens": "17:00",
+                "closes": "03:00"
             }
         ],
         "servesCuisine": ["Pizza", "Fast Food", "Pakistani", "Italian"],
@@ -420,32 +789,165 @@
         <div class="container">
             <h2 class="section-title">Special <span class="highlight">Deals</span></h2>
             <div class="deals-image-container">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E" 
-                     data-src="images/Deals.jpeg" 
-                     alt="Cheesy Feast Deals" 
-                     class="deals-image lazy-load"
-                     loading="lazy">
+                <picture>
+                    <source data-srcset="images/Deals.webp" type="image/webp">
+                    <source data-srcset="images/Deals.jpeg" type="image/jpeg">
+                    <img data-src="images/Deals.webp" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E" 
+                         alt="Cheesy Feast Special Deals - 2-in-1 Pizza, Large Pizza, Family Deals" 
+                         class="deals-image lazy-load"
+                         loading="lazy"
+                         width="800"
+                         height="600"
+                         onerror="this.src='images/Deals.jpeg';">
+                </picture>
             </div>
             <div class="deals-grid">
                 <div class="deal-card">
                     <div class="deal-badge">Hot Deal!</div>
                     <h3>2-in-1 Large Pizza</h3>
                     <p>Half Afghani, Half Malai</p>
-                    <div class="price">Rs. 750</div>
+                    <div class="price">Rs. 800</div>
                     <button class="btn-deal" onclick="orderNow()">Order Now</button>
                 </div>
                 <div class="deal-card">
                     <div class="deal-badge">Special!</div>
                     <h3>Large Pizza</h3>
                     <p>Any flavor of your choice</p>
-                    <div class="price">Rs. 500</div>
+                    <div class="price">Rs. 800</div>
                     <button class="btn-deal" onclick="orderNow()">Order Now</button>
                 </div>
                 <div class="deal-card">
                     <div class="deal-badge">Family Deal!</div>
-                    <h3>Family Package</h3>
-                    <p>Perfect for family gatherings</p>
-                    <div class="price">Special Price</div>
+                    <h3>Family Feast 19</h3>
+                    <p>2 Leg Broast, 2 Zinger, 1 BBQ Sandwich, 1 Arabian Shawarma, 1.5 Litre Drink</p>
+                    <div class="price">Rs. 2400</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Popular!</div>
+                    <h3>Deal 01</h3>
+                    <p>1 Zinger with Fries & Coleslaw, 1 Cold Drink 345ml</p>
+                    <div class="price">Rs. 450</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Value!</div>
+                    <h3>Deal 02</h3>
+                    <p>1 Pan Pizza, 1 Cold Drink 345ml</p>
+                    <div class="price">Rs. 420</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Combo!</div>
+                    <h3>Deal 03</h3>
+                    <p>1 Chicken Burger, 1 Beef Burger with Fries & Coleslaw</p>
+                    <div class="price">Rs. 600</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Feast!</div>
+                    <h3>Deal 04</h3>
+                    <p>1 Pan Pizza, 1 Zinger with Fries & Coleslaw</p>
+                    <div class="price">Rs. 650</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Popular!</div>
+                    <h3>Deal 05</h3>
+                    <p>1 Zinger with Fries & Coleslaw, 1 Regular Pasta</p>
+                    <div class="price">Rs. 720</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Sharing!</div>
+                    <h3>Deal 06</h3>
+                    <p>3 Zinger with Fries & Coleslaw</p>
+                    <div class="price">Rs. 1050</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Combo!</div>
+                    <h3>Deal 07</h3>
+                    <p>1 Pan Pizza, 1 Regular Pasta</p>
+                    <div class="price">Rs. 680</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Feast!</div>
+                    <h3>Deal 08</h3>
+                    <p>1 Zinger, 1 Qtr. Leg Broast with Fries & Coleslaw</p>
+                    <div class="price">Rs. 750</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Popular!</div>
+                    <h3>Deal 09</h3>
+                    <p>2 Zinger, 1 Qtr. Leg Broast with Fries & Coleslaw</p>
+                    <div class="price">Rs. 1150</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Value!</div>
+                    <h3>Deal 10</h3>
+                    <p>3 Zinger Rolls</p>
+                    <div class="price">Rs. 750</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Feast!</div>
+                    <h3>Deal 11</h3>
+                    <p>1 Chicken Burger, 1 Beef Burger, 1 Zinger with Fries & Coleslaw, 1 Litre Drink</p>
+                    <div class="price">Rs. 1100</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Sharing!</div>
+                    <h3>Deal 12</h3>
+                    <p>3 Small Pizza with 1 Free Dip Sauce</p>
+                    <div class="price">Rs. 950</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Popular!</div>
+                    <h3>Deal 13</h3>
+                    <p>2 Large Pizza with 1 Free Dip Sauce</p>
+                    <div class="price">Rs. 1500</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Feast!</div>
+                    <h3>Deal 14</h3>
+                    <p>2 Regular Pizza with 1 Free Dip Sauce, 1 Litre Drink</p>
+                    <div class="price">Rs. 1100</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Sharing!</div>
+                    <h3>Deal 15</h3>
+                    <p>3 Large Pizza with 1 Free Dip Sauce, 1 Litre Drink</p>
+                    <div class="price">Rs. 2200</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Combo!</div>
+                    <h3>Deal 16</h3>
+                    <p>1 Large Pizza, 1 Regular Pizza with 1 Free Dip Sauce</p>
+                    <div class="price">Rs. 1100</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Family Deal!</div>
+                    <h3>Family Feast 17</h3>
+                    <p>1 Zinger, 1 Beef Burger, 1 Chicken Sandwich, 1 Zinger Roll, 1 Qtr. Leg Broast, 1.5 Litre Drink</p>
+                    <div class="price">Rs. 1700</div>
+                    <button class="btn-deal" onclick="orderNow()">Order Now</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Family Deal!</div>
+                    <h3>Family Feast 18</h3>
+                    <p>3 Zinger, 1 Regular Pizza, 1 Regular Pasta, 1 Litre Drink</p>
+                    <div class="price">Rs. 2050</div>
                     <button class="btn-deal" onclick="orderNow()">Order Now</button>
                 </div>
             </div>
@@ -476,7 +978,7 @@
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>Opening Hours</h4>
-                            <p>Daily: 04:00 AM - 04:00 PM</p>
+                            <p>Daily: 05:00 PM - 03:00 AM</p>
                         </div>
                     </div>
                 </div>
