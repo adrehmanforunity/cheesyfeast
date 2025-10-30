@@ -248,6 +248,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
     border: 3px solid #FFD700;
+    aspect-ratio: 4 / 3; /* reserve stable placeholder to reduce CLS */
 }
 
 .menu-grid {
