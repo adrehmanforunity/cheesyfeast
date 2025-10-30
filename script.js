@@ -97,6 +97,26 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.willChange = 'opacity, transform';
         observer.observe(el);
     });
+
+    // Add descriptive ARIA labels for deal buttons
+    const dealButtons = document.querySelectorAll('.deal-card .btn-deal');
+    dealButtons.forEach((btn) => {
+        const card = btn.closest('.deal-card');
+        const title = card?.querySelector('h3')?.textContent?.trim();
+        const price = card?.querySelector('.price')?.textContent?.trim();
+        const label = title && price ? `Order Now: ${title} — ${price}` : 'Order Now';
+        btn.setAttribute('aria-label', label);
+    });
+
+    // Sync hamburger aria-expanded state
+    const hamburger = document.getElementById('hamburger');
+    const primaryMenu = document.getElementById('primary-menu');
+    if (hamburger && primaryMenu) {
+        hamburger.addEventListener('click', () => {
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', (!expanded).toString());
+        }, { passive: true });
+    }
 });
 
 // Add loading animation
@@ -205,4 +225,27 @@ class LazyLoader {
 // Initialize lazy loading when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     new LazyLoader();
+});
+
+// Descriptive ARIA labels for deal buttons
+document.addEventListener('DOMContentLoaded', () => {
+    // Descriptive ARIA labels for deal buttons
+    const dealButtons = document.querySelectorAll('.deal-card .btn-deal');
+    dealButtons.forEach((btn) => {
+        const card = btn.closest('.deal-card');
+        const title = card?.querySelector('h3')?.textContent?.trim();
+        const price = card?.querySelector('.price')?.textContent?.trim();
+        const label = title && price ? `Order Now: ${title} — ${price}` : 'Order Now';
+        btn.setAttribute('aria-label', label);
+    });
+
+    // Sync hamburger aria-expanded state
+    const hamburger = document.getElementById('hamburger');
+    const primaryMenu = document.getElementById('primary-menu');
+    if (hamburger && primaryMenu) {
+        hamburger.addEventListener('click', () => {
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', (!expanded).toString());
+        }, { passive: true });
+    }
 });
