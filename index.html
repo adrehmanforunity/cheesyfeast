@@ -68,9 +68,13 @@
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     
     <style>
-      /* Critical layout to prevent CLS before external CSS loads */
-      .navbar { position: fixed; top: 0; width: 100%; z-index: 1000; }
-      .hero { min-height: 100vh; padding: 100px 20px 50px; }
+      :root { --nav-height: 64px; }
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      .navbar { position: sticky; top: 0; z-index: 1000; height: var(--nav-height); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; background: #fff; border-bottom: 1px solid #eee; }
+      .navbar img { width: 40px; height: 40px; }
+      .hero { min-height: calc(60vh - var(--nav-height)); display: grid; place-items: center; text-align: center; padding: 24px 16px; background: #fafafa; }
+      .hero h1 { margin: 0 0 8px 0; font-weight: 700; font-size: 2rem; line-height: 1.2; }
+      .hero p { margin: 0; font-size: 1rem; color: #444; }
     </style>
     
     <link rel="stylesheet" href="style.css">
@@ -174,7 +178,7 @@
                          onerror="this.src='images/Menus.jpeg';">
                 </picture>
             </div>
-            <div class="menu-grid">
+            <!--  <div class="menu-grid">
                 <div class="menu-item">
                     <div class="menu-icon">🍕</div>
                     <h3>Specialty Pizzas</h3>
@@ -196,7 +200,7 @@
                     <p>Sweet treats to complete your meal</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- Enhanced Menu Structured Data with @id and Restaurant Link -->
