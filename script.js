@@ -1,6 +1,7 @@
 // Mobile Navigation Toggle
 const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
+// navigation toggle and accessibility
+const navMenu = document.getElementById('primary-menu');
 
 // Use passive event listeners for better performance
 hamburger.addEventListener('click', () => {
